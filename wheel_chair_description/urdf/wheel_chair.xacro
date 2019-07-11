@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find wheel_chair_description)/urdf/wheel_chair_base.xacro" />
+
+    <wheel_chair_base/>
+
+</robot>
