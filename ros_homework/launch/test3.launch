@@ -1,0 +1,4 @@
+<launch>
+   <node pkg="ros_homework" type="t3_server" name="move_server" output="screen" />
+   <node pkg="ros_homework" type="t3_client" name="move_client" output="screen" />
+</launch>

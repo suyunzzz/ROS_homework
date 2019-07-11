@@ -1,0 +1,7 @@
+#goal information
+float32 x
+float32 y
+---
+uint32 now_postion
+---
+float32 percent

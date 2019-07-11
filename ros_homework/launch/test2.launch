@@ -1,0 +1,5 @@
+<launch>
+   <node pkg="turtlesim" name="turtle" type="turtlesim_node"/>
+   <node pkg="ros_homework" name="turtle2_listener" type="turtle_listener" output="screen"/>
+   <node pkg="ros_homework" name="turtle2_spawn_and_publisher" type="creater_and_publisher" output="screen"/>
+</launch>
