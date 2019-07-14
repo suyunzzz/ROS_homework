@@ -232,3 +232,12 @@ add_dependencies(voice_controll ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXP
 target_link_libraries(voice_controll
   ${catkin_LIBRARIES}
 )
+
+add_executable(my_voice_assistant
+  src/my_voice_assistant.cpp
+)
+add_dependencies(my_voice_assistant ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(my_voice_assistant
+  ${catkin_LIBRARIES}
+  libmsc.so -ldl -pthread
+)
